@@ -1,10 +1,12 @@
-package cuong.tt.config;
+package cuongnguyen.tt.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class[]{
+               WebSecurityConfig.class,PersistenceJPAConfig.class, SecurityApplicationInitializer.class
+        };
     }
 
     protected Class<?>[] getServletConfigClasses() {
