@@ -5,7 +5,10 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
 
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
-               WebSecurityConfig.class,PersistenceJPAConfig.class, SecurityApplicationInitializer.class
+               WebSecurityConfig.class,
+                PersistenceJPAConfig.class,
+                SecurityApplicationInitializer.class,
+                MailConfig.class
         };
     }
 
