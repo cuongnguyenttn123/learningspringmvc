@@ -42,6 +42,13 @@ public class UserEntity implements java.io.Serializable{
                       boolean credentialsNonExpired, boolean accountNonLocked, List<GrantedAuthority> roleEntitySet) {
     }
 
+    public UserEntity(Integer id, String userName, String passWord, Integer enabled) {
+        this.id = id;
+        this.userName = userName;
+        this.passWord = passWord;
+        this.enabled = enabled;
+    }
+
     public UserEntity(String userName, String passWord, Integer enabled, Set<RoleEntity> roleEntitySet) {
         this.userName = userName;
         this.passWord = passWord;
