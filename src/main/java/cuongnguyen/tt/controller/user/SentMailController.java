@@ -27,7 +27,6 @@ public class SentMailController {
             simpleMailMessage.setSubject("Thu cai thoi gi ma cang");
             simpleMailMessage.setText("[ĐN] CHÀO THÁNG TÁM, KHÔNG CÒN NỖI SỢ THIẾU VIỆC LÀM ❤️\n" +
                     "\"Cơ hội việc làm hot nhất tháng 8 dành cho các bạn sinh viên vừa, sắp ra trường khối ngành Công Nghệ\"");
-            
             this.javaMailSender.send(simpleMailMessage);
         }catch (Exception e){
             response = environment.getProperty("reponse.error");
